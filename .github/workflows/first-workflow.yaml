@@ -1,0 +1,16 @@
+name: First Workflow
+
+on: push
+
+jobs:
+    Explore-the-repo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout the Code
+              uses: actions/checkout@v6
+
+            - name: Read the files
+              run: ls -a
+
+            - name: Read the Readme file
+              run: cat README.me
